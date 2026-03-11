@@ -1,9 +1,9 @@
 variable "dev_account_id" {
-  description = "development account"
+  description = "dev account"
   type        = string
 }
 
 variable "prod_account_id" {
-  description = "production account"
+  description = "prod account"
   type        = string
 }
