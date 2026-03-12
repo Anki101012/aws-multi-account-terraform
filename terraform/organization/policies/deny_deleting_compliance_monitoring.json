@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyDeletingMajorConfigurations",
+      "Effect": "Deny",
+      "Action": [
+        "cloudtrail:DeleteTrail",
+	"organizations:LeaveOrganization",
+        "guardduty:DeleteDetector",
+        "guardduty:UpdateDetector",
+        "guardduty:DeleteMembers",
+        "guardduty:DisassociateMembers",
+        "guardduty:StopMonitoringMembers",
+        "guardduty:UpdateMemberDetectors"
+      ],
+      "Resource": "*"
+      }
+  ]
+}
+

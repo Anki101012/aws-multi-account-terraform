@@ -1,30 +1,40 @@
-# AWS Multi Account Architecture Lab
-Creating a project to demonstrates an enterprise-style AWS multi-account environment using AWS Organizations, Service Control Policies (SCP), IAM Identity Center and Terraform.
+## AWS Multi Account Architecture Lab
+This project demonstrates an enterprise-style AWS multi-account environment using -
+AWS Organizations, Service Control Policies (SCP), IAM Identity Center and Terraform.
 
 ## Organization Scenario
-The lab simulates a cloud organization called "helixcloud".
-Users access AWS accounts through centralized identity and role-based access.
+The lab simulates a cloud organization **HelixCloud** with centralized governance, account isolation & role-based access management across multiple AWS accounts.
 
 ## Organization Structure
 1. Management Account --> cloud.platform.eng
-2. Member Accounts --> helixcloud.dev4400 || helixcloud.prod4400
+2. Dev Account --> helixcloud.dev4400 
+3. Prod Account --> helixcloud.prod4400
 
 ## Architecture
 helixcloud Organization
-        |
-Management Account
-        |
--------------------------
-|                       |
-Dev Account             Prod Account
-helixcloud.dev4400      helixcloud.prod4400
+|
+|
+|___Management Account
+|
+|___Dev Account(helixcloud.dev4400)
+|___Prod Account(helixcloud.prod4400)
 
-## Technologies Used
-- AWS Organizations
-- IAM Identity Center
-- Terraform
-- AWS IAM
-- Multi-account architecture
+##Technologies Used
+- AWS Organizations --> used for multi-account management/governance
+- IAM Identity Center --> centralized authentication
+- SCP (Service Control Policies) --> centralized policy enforcement across accounts
+- Terraform --> infra-as-code implementation
+- Amazon S3 --> used to maintain versioning of terraform state file
+- Amazon DynamoDB --> used to maintain the terraform lock file
+- AWS IAM --> access and permission management
+
+## Features Achieved
+* AWS Organizations-based multi-account structure
+* Organizational Units for Dev and Prod
+* Service Control Policies for governance
+* Terraform-managed infrastructure
+* Remote Terraform backend with S3 and DynamoDB
+* Centralized identity approach using IAM Identity Center
 
 ## Objective
-The goal of this project is to simulate enterprise cloud governance and account isolation patterns used in large organizations.
+The goal of this project is to simulate enterprise cloud governance with centralized access control, and Infrastructure as Code practices.

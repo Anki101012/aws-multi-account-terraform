@@ -5,6 +5,15 @@ terraform {
       version = "~> 6.36"
     }
   }
+
+  backend "s3" {
+    bucket         = "helixcloud-tf-state-396290514400"
+    key            = "organization/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "TerraformStateLock"
+    encrypt        = true
+  }
+
 }
 
 provider "aws" {
