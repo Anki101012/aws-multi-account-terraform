@@ -1,2 +1,2 @@
-dev_account_id  = "250857930050"
-prod_account_id = "864482617616"
+dev_account_id  = "2xxxxxxxx"
+prod_account_id = "8xxxxxxxx"
