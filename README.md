@@ -14,16 +14,11 @@ AWS Organizations, Service Control Policies (SCP), IAM Identity Center and Terra
 1. Management Account --> cloud.platform.eng
 2. Dev Account --> helixcloud.dev4400 
 3. Prod Account --> helixcloud.prod4400
+---
 
 ## Architecture
 
-helixcloud Organization
-|
-|
-|___Management Account
-|
-|___Dev Account(helixcloud.dev4400)
-|___Prod Account(helixcloud.prod4400)
+![AWS Multi Account Architecture](architecture/architecture-diagram.png)
 ---
 
 ## Technologies Used
