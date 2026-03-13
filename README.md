@@ -18,6 +18,7 @@ helixcloud Organization
 |
 |___Dev Account(helixcloud.dev4400)
 |___Prod Account(helixcloud.prod4400)
+---
 
 ##Technologies Used
 - AWS Organizations --> used for multi-account management/governance
