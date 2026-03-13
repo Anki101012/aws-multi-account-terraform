@@ -18,7 +18,7 @@ AWS Organizations, Service Control Policies (SCP), IAM Identity Center and Terra
 
 ## Architecture
 
-![AWS Multi Account Architecture](architecture/architecture-diagram.png)
+![AWS Multi Account Architecture](architecture-diagram/architecture-diagram.png)
 ---
 
 ## Technologies Used
