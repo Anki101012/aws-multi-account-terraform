@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "tf_state_backend" {
-  bucket = "helixcloud-tf-state-396290514400"
+  bucket = "helixcloud-tf-state-39xxxxx"
 
   tags = {
     Name        = "tf_state_backend"
