@@ -21,6 +21,7 @@ helixcloud Organization
 ---
 
 ##Technologies Used
+
 - AWS Organizations --> used for multi-account management/governance
 - IAM Identity Center --> centralized authentication
 - SCP (Service Control Policies) --> centralized policy enforcement across accounts
