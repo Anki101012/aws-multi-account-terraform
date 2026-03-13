@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "helixcloud-tf-state-396290514400"
+    bucket         = "helixcloud-tf-state-39xxxxxx"
     key            = "organization/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "TerraformStateLock"
